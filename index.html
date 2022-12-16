@@ -27,7 +27,11 @@
         <nav class="site-nav">
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a
+                class="nav-link-current nav-link current link"
+                href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
@@ -40,17 +44,11 @@
         <ul class="contacts-list list">
           <li class="contacts-item">
             <a class="contact-mail link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contacts-item">
             <a class="contact-phone link" href="tel:+11(000)111-11-11">
-              <svg class="contacts-icon" width="16" height="12">
-                <use href="./images/icons.svg#phone"></use>
-              </svg>
               +11 (000) 111-11-11
             </a>
           </li>
@@ -64,7 +62,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Секція особливості -->
@@ -155,7 +155,6 @@
           </ul>
         </div>
       </section>
-
       <!-- Секція команди  -->
       <section class="team section">
         <div class="container">
@@ -332,6 +331,7 @@
           </ul>
         </div>
       </section>
+      <!-- Cекція клієнтів -->
       <section class="customers section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
@@ -429,5 +429,16 @@
         </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
